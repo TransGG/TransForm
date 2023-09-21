@@ -8,13 +8,14 @@ export type FieldType = {
 };
 
 export const fields = [
-    {
-        name: 'Discord username',
-        description: 'Your discord username, including your 4-digit discriminator if you have one',
-        minLength: 2,
-        maxLength: 32,
-    },
-    {name: 'Why do you want to be a staff member?'},
+	{
+		name: 'Discord username',
+		description: 'Your discord username, including your 4-digit discriminator if you have one',
+		minLength: 2,
+		maxLength: 32
+	},
+	{ name: 'Why do you want to be a staff member?' },
+	{ name: 'abcde?' }
 ] satisfies FieldType[];
 
 export const schema = z.object(Object.fromEntries(
