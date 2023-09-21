@@ -3,6 +3,7 @@
 
 	import type { SuperValidated } from 'sveltekit-superforms';
 	import { schema, type Schema, fields } from './schema';
+	import { superValidate } from 'sveltekit-superforms/server';
 
 	export let form: SuperValidated<Schema>;
 </script>
